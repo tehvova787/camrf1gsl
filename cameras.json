@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Москва Коломенская 21",
+    "url": "https://msk.rtsp.me/hklZIq-sV3IlIYcpgpOwaw/1746664410/poster/KB3DnHab.jpg",
+    "is_video": false,
+    "district": "Москва"
+  },
+  {
+    "name": "Москва Нагатинский затон",
+    "url": "https://msk.rtsp.me/-ug0kZEJV3Vacec2sw6KqQ/1746664627/poster/Yb8Th9Q5.jpg",
+    "is_video": false,
+    "district": "Москва"
+  },
+  {
+    "name": "Москва Седлигер Сити",
+    "url": "https://www.geocam.ru/js/player/playerjs.html?file=https://rtsp2.videocam.online/live/ilmensky.stream/playlist.m3u8&poster=https://rtsp2.videocam.online/thumbnail?application=live&streamname=ilmensky.stream&size=1920x1080&fitmode=letterbox&format=jpg",
+    "is_video": true,
+    "district": "Москва"
+  },
+  {
+    "name": "Зеленоград святого филарета",
+    "url": "https://vk.com/video_ext.php?oid=-155553312&id=456239584&hd=1",
+    "is_video": true,
+    "district": "Москва"
+  },
+  {
+    "name": "Москва Максима Панорама",
+    "url": "https://vk.com/video_ext.php?oid=-106879986&id=456252667&hash=53cb4feed1578794",
+    "is_video": true,
+    "district": "Москва"
+  },
+  {
+    "name": "Махачкала Улица Гайдара Гаджиева, 20",
+    "url": "https://open.ivideon.com/embed/v2/?server=100-7gCaHvqP8yCuOAMm3wFRIf&camera=0&width=&height=&lang=ru",
+    "is_video": true,
+    "district": "Дагестан"
+  },
+  {
+    "name": "Махачкала Площадь Ленина",
+    "url": "https://rtsp.me/embed/dT6bKh5S/",
+    "is_video": true,
+    "district": "Дагестан"
+  },
+  {
+    "name": "Дербент Крепость Нарын-Кала",
+    "url": "https://open.ivideon.com/embed/v2/?server=100-pN3QjF7k4vRmGtS8LdBzXc&camera=0&width=&height=&lang=ru",
+    "is_video": true,
+    "district": "Дагестан"
+  },
+  {
+    "name": "Екатеринбург Вайнера 9",
+    "url": "https://open.ivideon.com/embed/v2/?server=100-yKb5qdqhDkq9bJ1HFJwZtY&camera=0&width=&height=&lang=ru",
+    "is_video": true,
+    "district": "Екатеринбург"
+  },
+  {
+    "name": "Санкт-Петербург Невский проспект",
+    "url": "https://open.ivideon.com/embed/v2/?server=100-2vNOoJMREjvEBgFGX5DXOl&camera=0&width=&height=&lang=ru",
+    "is_video": true,
+    "district": "Санкт-Петербург"
+  },
+  {
+    "name": "Новосибирск Красный проспект",
+    "url": "https://open.ivideon.com/embed/v2/?server=100-OMgUncZu1uPnY9mtWohWZP&camera=0&width=&height=&lang=ru",
+    "is_video": true,
+    "district": "Новосибирск"
+  },
+  {
+    "name": "Красная площадь",
+    "url": "https://media.icnet.ru/cameras/v7nWktzP4M.m3u8",
+    "is_video": true,
+    "district": "Центральный"
+  },
+  {
+    "name": "Тверская улица",
+    "url": "https://media.icnet.ru/cameras/hdX7vJnPgN.m3u8",
+    "is_video": true,
+    "district": "Центральный"
+  },
+  {
+    "name": "Парк Горького",
+    "url": "https://media.icnet.ru/cameras/ZeC4jSgf3a.jpg",
+    "is_video": false,
+    "district": "Южный"
+  },
+  {
+    "name": "Воробьевы горы",
+    "url": "https://media.icnet.ru/cameras/QsRjn87HJk.m3u8",
+    "is_video": true,
+    "district": "Западный"
+  }
+] 

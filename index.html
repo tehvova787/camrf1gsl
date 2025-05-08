@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Сервис удалённого управления городскими камерами РФ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Сервис удалённого управления городскими камерами РФ</h1>
+        <h2 class="subtitle">Программное обеспечение создано командой GSL Georgii style</h2>
+        <p class="additional-info">Ашот Карен Русик не верили за управление и ретранслирование камер вот доказательство</p>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="moscow">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Coat_of_Arms_of_Moscow.svg/800px-Coat_of_Arms_of_Moscow.svg.png" alt="Логотип Москвы" class="tab-logo">
+                <span>Москва</span>
+            </div>
+            <div class="tab" data-tab="dagestan">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Coat_of_arms_of_Dagestan.svg/800px-Coat_of_arms_of_Dagestan.svg.png" alt="Логотип Дагестана" class="tab-logo">
+                <span>Дагестан</span>
+            </div>
+            <div class="tab" data-tab="other">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/800px-Flag_of_Russia.svg.png" alt="Флаг РФ" class="tab-logo">
+                <span>Отдельное</span>
+            </div>
+        </div>
+
+        <main>
+            <div class="camera-list">
+                <div class="tab-content active" data-tab="moscow">
+                    <div class="region-header">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Coat_of_Arms_of_Moscow.svg/800px-Coat_of_Arms_of_Moscow.svg.png" alt="Логотип Москвы" class="region-logo">
+                        <h2>Камеры Москвы</h2>
+                    </div>
+                    <ul id="moscow-cameras">
+                        <li data-url="https://msk.rtsp.me/hklZIq-sV3IlIYcpgpOwaw/1746664410/poster/KB3DnHab.jpg" data-is-video="false">Москва Коломенская 21</li>
+                        <li data-url="https://msk.rtsp.me/-ug0kZEJV3Vacec2sw6KqQ/1746664627/poster/Yb8Th9Q5.jpg" data-is-video="false">Москва Нагатинский затон</li>
+                        <li data-url="https://www.geocam.ru/js/player/playerjs.html?file=https://rtsp2.videocam.online/live/ilmensky.stream/playlist.m3u8&poster=https://rtsp2.videocam.online/thumbnail?application=live&streamname=ilmensky.stream&size=1920x1080&fitmode=letterbox&format=jpg" data-is-video="true">Москва Седлигер Сити</li>
+                        <li data-url="https://vk.com/video_ext.php?oid=-155553312&id=456239584&hd=1" data-is-video="true">Зеленоград святого филарета</li>
+                        <li data-url="https://vk.com/video_ext.php?oid=-106879986&id=456252667&hash=53cb4feed1578794" data-is-video="true">Москва Максима Панорама</li>
+                        <li data-url="https://runtime.strm.yandex.ru/player/episode/vple7umxm54i7kf5jdng?autoplay=0&mute=0&tv=0&mute=1&autoplay=1&play_on_visible=true&hidden=sound" data-is-video="true">Москва Марткисткая</li>
+                        <li data-url="https://rtsp.me/embed/7b49D38G/" data-is-video="true">Москва Академика Сахарова</li>
+                        <li data-url="https://www.geocam.ru/js/player/playerjs.html?file=https://hls-spb03.timetechnology.ru:8080/2722/hls/fcdac098bed8c78a/live.m3u8&poster=/images/photo/fe/de/federation-tower-cam.webp" data-is-video="true">Москва БАшня восток</li>
+                        <li data-url="https://public.earthcam.net/tJ90CoLmq7TzrY396Yd88FqfTAwfmtVRv2-0oQ1aoi8!.tJ90CoLmq7TzrY396Yd88Ow9CiXcO8FGM8HzQt5HxEA!.tJ90CoLmq7TzrY396Yd88BeNGoU7-y8N7FrCaUXSyUM!.tJ90CoLmq7TzrY396Yd88L_pH04rkaonfiY1nA72o5g!.tJ90CoLmq7TzrY396Yd88DXazbAbXhHTTbGgwfzKRLc!" data-is-video="true">Хамовники Новодевичий монастырь</li>
+                        <li data-url="https://www.geocam.ru/js/player/playerjs.html?file=https://rtsp2.videocam.online/live/FiliCity2.stream/playlist.m3u8&poster=https://rtsp2.videocam.online/thumbnail?application=live&streamname=FiliCity2.stream&size=1920x1080&fitmode=letterbox&format=jpg" data-is-video="true">Москва Фили Сити 2</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-z1QMexHjdPBJtKGZL4RtxT&camera=131072&width=&height=&lang=ru" data-is-video="true">Москва Кутузовский Камера банка ВТБ</li>
+                    </ul>
+                </div>
+                <div class="tab-content" data-tab="dagestan">
+                    <div class="region-header">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Coat_of_arms_of_Dagestan.svg/800px-Coat_of_arms_of_Dagestan.svg.png" alt="Логотип Дагестана" class="region-logo">
+                        <h2>Камеры Дагестана</h2>
+                    </div>
+                    <ul id="dagestan-cameras">
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-7gCaHvqP8yCuOAMm3wFRIf&camera=0&width=&height=&lang=ru" data-is-video="true">Махачкала Улица Гайдара Гаджиева, 20</li>
+                        <li data-url="https://rtsp.me/embed/dT6bKh5S/" data-is-video="true">Махачкала Площадь Ленина</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-pN3QjF7k4vRmGtS8LdBzXc&camera=0&width=&height=&lang=ru" data-is-video="true">Дербент Крепость Нарын-Кала</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-qH6wZxJyVs3TmPtF9GbK5n&camera=0&width=&height=&lang=ru" data-is-video="true">Каспийск Набережная</li>
+                        <li data-url="https://rtsp.me/embed/Jz4pMw7L/" data-is-video="true">Хасавюрт Центральный рынок</li>
+                    </ul>
+                </div>
+                <div class="tab-content" data-tab="other">
+                    <div class="region-header">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/800px-Flag_of_Russia.svg.png" alt="Флаг РФ" class="region-logo">
+                        <h2>Другие регионы России</h2>
+                    </div>
+                    <ul id="other-cameras">
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-yKb5qdqhDkq9bJ1HFJwZtY&camera=0&width=&height=&lang=ru" data-is-video="true">Екатеринбург Вайнера 9</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-2vNOoJMREjvEBgFGX5DXOl&camera=0&width=&height=&lang=ru" data-is-video="true">Санкт-Петербург Невский проспект</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-OMgUncZu1uPnY9mtWohWZP&camera=0&width=&height=&lang=ru" data-is-video="true">Новосибирск Красный проспект</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-wLRfuXYwDJdqqbXKV83O5W&camera=0&width=&height=&lang=ru" data-is-video="true">Казань Баумана</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-V0TxWyABYWmvgMEo5RNp3B&camera=0&width=&height=&lang=ru" data-is-video="true">Сочи Набережная</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-Fm9iU0KKlbsYnKtDdCTkGW&camera=0&width=&height=&lang=ru" data-is-video="true">Владивосток Центральная площадь</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-XWN4a8S0OTzFYvODUGVn9t&camera=0&width=&height=&lang=ru" data-is-video="true">Калининград Площадь Победы</li>
+                        <li data-url="https://rtsp.me/embed/7KRTfh2B/" data-is-video="true">Красноярск Вантовый мост</li>
+                        <li data-url="https://rtsp.me/embed/sskesF3S/" data-is-video="true">Ростов-на-Дону Большая Садовая</li>
+                        <li data-url="https://rtsp.me/embed/S92ysH2h/" data-is-video="true">Воронеж Центральный парк</li>
+                        <li data-url="https://rtsp.me/embed/kR9s7SeH/" data-is-video="true">Грозный Проспект Путина</li>
+                        <li data-url="https://rtsp.me/embed/N8eKfY3R/" data-is-video="true">Грозный Центральная мечеть</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-eRfK5TxBn3W2yLpGmV76qZ&camera=0&width=&height=&lang=ru" data-is-video="true">Аргун Центральная площадь</li>
+                        <li data-url="https://open.ivideon.com/embed/v2/?server=100-Bn7mJt3V5qZwYx8D9sFcHp&camera=0&width=&height=&lang=ru" data-is-video="true">Гудермес Центральный проспект</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="camera-view">
+                <h2 id="current-camera-title">Выберите камеру из списка</h2>
+                <div id="camera-container" class="camera-feed">
+                    <div class="status-indicator">Ожидание подключения...</div>
+                    <div class="placeholder">Выберите камеру слева для просмотра</div>
+                </div>
+                <div class="control-panel">
+                    <button class="button">Подключиться</button>
+                    <button class="button">Управление</button>
+                    <button class="button">Настройки</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Сервис удалённого управления городскими камерами РФ</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

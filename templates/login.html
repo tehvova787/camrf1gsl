@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Авторизация - Сервис удалённого управления городскими камерами РФ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('styles') }}">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
+        }
+        
+        .login-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #00ffc8;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #00ffc8;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #333;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            border-radius: 4px;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .login-button {
+            width: 100%;
+            padding: 1rem;
+            background-color: #00ffc8;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .login-button:hover {
+            background-color: #00e6b5;
+        }
+        
+        .error-message {
+            color: #ff3c3c;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        /* Touch active states */
+        .touch-active {
+            transform: scale(0.95);
+            background-color: #00d6af !important;
+            transition: transform 0.1s ease;
+        }
+        
+        /* Mobile specific styles */
+        @media (max-width: 768px) {
+            .login-container {
+                max-width: 90%;
+                margin: 50px auto;
+                padding: 1.5rem;
+            }
+            
+            .login-title {
+                font-size: 1.5rem;
+            }
+            
+            .form-group input {
+                padding: 0.7rem;
+                font-size: 1rem;
+            }
+            
+            .login-button {
+                padding: 0.8rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .login-container {
+                max-width: 95%;
+                margin: 30px auto;
+                padding: 1rem;
+            }
+            
+            .login-title {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .form-group {
+                margin-bottom: 1rem;
+            }
+            
+            .form-group label {
+                font-size: 0.9rem;
+            }
+            
+            .form-group input {
+                padding: 0.6rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1 class="login-title">Авторизация</h1>
+            <form id="login-form" method="post" action="/login">
+                <div class="form-group">
+                    <label for="username">Логин</label>
+                    <input type="text" id="username" name="username" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="login-button">Войти</button>
+                <div class="error-message" id="error-message">
+                    {% if error %}
+                    {{ error }}
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // Обнаружение мобильного устройства
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.body.classList.add('mobile-device');
+        }
+        
+        // Добавим обработчик события для сенсорных устройств
+        document.querySelector('.login-button').addEventListener('touchstart', function() {
+            this.classList.add('touch-active');
+        });
+        
+        document.querySelector('.login-button').addEventListener('touchend', function() {
+            this.classList.remove('touch-active');
+        });
+    </script>
+</body>
+</html> 
